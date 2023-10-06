@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "47357621393",
+    "firebase_url": "https://booksonapp-1ab5c-default-rtdb.firebaseio.com",
+    "project_id": "booksonapp-1ab5c",
+    "storage_bucket": "booksonapp-1ab5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47357621393:android:1328cda4fc0dac7e9cbb30",
+        "android_client_info": {
+          "package_name": "com.booksonapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47357621393-56cna4qsq4drgaj8u6upog9ih2m6ri0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4OkVSt2f80Ws98BJDLmkyawIDr0k9aB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47357621393-56cna4qsq4drgaj8u6upog9ih2m6ri0k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "47357621393-4hhsp226fjouk63n4ugai0360dmgrsuj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.booksonapp.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47357621393:android:508c4c72bd0f65579cbb30",
+        "android_client_info": {
+          "package_name": "com.booksonapp.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47357621393-noke68bcpem8topl5t3vs1monueq6pqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.booksonapp.app",
+            "certificate_hash": "d627b0eb79da72b533c73ba023e66b96a28f313c"
+          }
+        },
+        {
+          "client_id": "47357621393-56cna4qsq4drgaj8u6upog9ih2m6ri0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4OkVSt2f80Ws98BJDLmkyawIDr0k9aB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47357621393-56cna4qsq4drgaj8u6upog9ih2m6ri0k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "47357621393-4hhsp226fjouk63n4ugai0360dmgrsuj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.booksonapp.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+export const RESET_REDUX = "RESET_REDUX";
+export const SAVE_TOKEN = "SAVE_TOKEN";
+export const SAVE_USER_DETAILS = "SAVE_USER_DETAILS";
+export const SET_BANNERS = "SET_BANNERS";
+export const SET_GENRES = "SET_GENRES";
+export const SET_LATEST_BOOKS = "SET_LATEST_BOOKS";
+export const SET_SELLERS = "SET_SELLERS";
+export const SET_BOOKS = "SET_BOOKS";
+export const SET_MY_BOOKS = "SET_MY_BOOKS";
+export const SET_NOTIFICATIONS = "SET_NOTIFICATIONS";

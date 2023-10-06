@@ -1,0 +1,6 @@
+<svg id="ant-design:file-done-outlined" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="ant-design:file-done-outlined_Background_Mask_" data-name="ant-design:file-done-outlined (Background/Mask)" width="20" height="20" fill="none"/>
+  <g id="Group_46" data-name="Group 46" transform="translate(-7.654 -8.866)">
+    <path id="Vector" d="M8.789,17.576a8.788,8.788,0,1,1,8.787-8.789A8.8,8.8,0,0,1,8.789,17.576Zm0-14.974a6.183,6.183,0,1,0,4.374,1.811A6.145,6.145,0,0,0,8.789,2.6ZM7.761,12.775A.32.32,0,0,1,7.5,12.64l-3-4.153a.328.328,0,0,1,.266-.517H6.556a.318.318,0,0,1,.148.036.31.31,0,0,1,.116.1L7.76,9.4l2.583-3.573a.323.323,0,0,1,.264-.133h1.8a.323.323,0,0,1,.29.178.317.317,0,0,1-.029.337L8.024,12.64A.32.32,0,0,1,7.761,12.775Z" transform="translate(8.906 10.078)" fill="#1f1f1f"/>
+  </g>
+</svg>

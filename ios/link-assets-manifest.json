@@ -1,0 +1,105 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/ProximaNova-Black.otf",
+      "sha1": "94159dcb3cba9e8702b22caa2ff9bc74c03b4c70"
+    },
+    {
+      "path": "assets/fonts/ProximaNova-Bold.otf",
+      "sha1": "411bff1d3b8f0144f1685c94a21156a53848d5a6"
+    },
+    {
+      "path": "assets/fonts/ProximaNova-Extrabold.otf",
+      "sha1": "01ed725f5618902e19911eccac005c7069bc8017"
+    },
+    {
+      "path": "assets/fonts/ProximaNova-Light.otf",
+      "sha1": "813f4df23bb5c7a45f886bac87744086c72baf2c"
+    },
+    {
+      "path": "assets/fonts/ProximaNova-Regular.otf",
+      "sha1": "28d04eb938c05b5158a69a709682d4f0517a59ab"
+    },
+    {
+      "path": "assets/images/CheckedIcon.png",
+      "sha1": "7e0d83a5b513e46dc341b5bc00d432e3f2856987"
+    },
+    {
+      "path": "assets/images/SplashBg.png",
+      "sha1": "9a2625d175ffe0abbc2eb5616a1d8d9458baace7"
+    },
+    {
+      "path": "assets/images/SplashLogo.png",
+      "sha1": "f2bd536bf2092109f7b02068c76a5d322af4c8d4"
+    },
+    {
+      "path": "assets/images/locationIcon.png",
+      "sha1": "40f9624d6350a405595e33b11655c4c5dc128872"
+    },
+    {
+      "path": "assets/index.js",
+      "sha1": "fba0c3df7ac31cb1d189eb94412f64a6510fb4bc"
+    },
+    {
+      "path": "assets/svg/ChatIcon.svg",
+      "sha1": "c68806ad8f04ae9ba904e0a01f6ca12469da8986"
+    },
+    {
+      "path": "assets/svg/ChatIconFill.svg",
+      "sha1": "bd1a2fd3882414d7bc34166a71782d997bbbfa23"
+    },
+    {
+      "path": "assets/svg/CheckIcon.svg",
+      "sha1": "054689614844cdac9f72f74d9bb2cdf8d5c51e50"
+    },
+    {
+      "path": "assets/svg/DoneIcon.svg",
+      "sha1": "952078014567ead3b7668981c817ad9d5ad676cf"
+    },
+    {
+      "path": "assets/svg/HomeFillIcon.svg",
+      "sha1": "388aee61706e8f0d74129fa39c3a5292095a36d9"
+    },
+    {
+      "path": "assets/svg/HomeIcon.svg",
+      "sha1": "dc07e8722c374145798ad76125a45474337dc720"
+    },
+    {
+      "path": "assets/svg/MyLibaryIcon.svg",
+      "sha1": "5893c443754418cd483dc3bf35a33328df7b0c07"
+    },
+    {
+      "path": "assets/svg/MyLibraryIconFill.svg",
+      "sha1": "966a08236602fbb788b7897e7875b4e6af1ea388"
+    },
+    {
+      "path": "assets/svg/NewIcon.svg",
+      "sha1": "2abe4eb3840f1ecbfd0a35537179ee52c3c83103"
+    },
+    {
+      "path": "assets/svg/NotificationIcon.svg",
+      "sha1": "19852c7f0606c78151dbe0d4f01d6a59c9f662e8"
+    },
+    {
+      "path": "assets/svg/NotificationIconFill.svg",
+      "sha1": "13c0be553b01f6ea3d1a731d3ee409632977b3ea"
+    },
+    {
+      "path": "assets/svg/ProfileIcon.svg",
+      "sha1": "485fee11dbe48025ada5388e3b0f3c1cd7f24501"
+    },
+    {
+      "path": "assets/svg/ProfileIconFill.svg",
+      "sha1": "0c00485e66a1a94eb713b44611caec8fa12ae7bc"
+    },
+    {
+      "path": "assets/svg/SearchIcon.svg",
+      "sha1": "918b9edb0be5fbda06b717e3058e229dfb87711b"
+    },
+    {
+      "path": "assets/svg/SearchIconFill.svg",
+      "sha1": "a2957e566b67ea3d4ad4b01f332e7e91b638fc65"
+    }
+  ]
+}
