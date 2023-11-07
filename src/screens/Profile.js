@@ -31,6 +31,12 @@ import FastImage from "react-native-fast-image";
 import { subscribe, unsubscribe } from "../redux/actions/commonActions";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import moment from "moment";
+import {
+  isIosStorekit2,
+  PurchaseError,
+  requestSubscription,
+  useIAP,
+} from "react-native-iap";
 
 // create a component
 const Profile = (props) => {
@@ -105,11 +111,88 @@ const Profile = (props) => {
         type: "sub",
       });
     } else {
-      letsDoIosInAppPurches();
+      // letsDoIosInAppPurches();
     }
   };
 
-  const letsDoIosInAppPurches = () => {};
+  //only for ios handler of InAPpPurches
+  const {
+    connected,
+    subscriptions,
+    getSubscriptions,
+    currentPurchase,
+    finishTransaction,
+  } = useIAP();
+
+  //WHEN CLICK ON SUBCRIPTION
+  const letsDoIosInAppPurches = (productId) => {
+    handleBuySubscription(productId); //here you have to pass productId mandotrotuy.
+  };
+
+  //ownedSubscriptions you can get your subction parts
+  const [ownedSubscriptions, setOwnedSubscriptions] = useState([]);
+
+  const handleGetSubscriptions = async () => {
+    try {
+      await getSubscriptions({ skus: "" }).then(() => {
+        console.log("iosSubsctption Data :: ", subscriptions);
+      }); //Here you have to add your product_id from ios
+    } catch (error) {
+      errorLog({ message: "handleGetSubscriptions", error });
+    }
+  };
+
+  const handleBuySubscription = async (productId) => {
+    try {
+      // here you have to pass product Id from ios
+      await requestSubscription({
+        sku: productId,
+      });
+    } catch (error) {
+      if (error instanceof PurchaseError) {
+        errorLog({ message: `[${error.code}]: ${error.message}`, error });
+      } else {
+        errorLog({ message: "handleBuySubscription", error });
+      }
+    }
+  };
+
+  useEffect(() => {
+    //getSubScrioption from Server
+    handleGetSubscriptions();
+    const checkCurrentPurchase = async () => {
+      try {
+        if (currentPurchase?.productId) {
+          await finishTransaction({
+            purchase: currentPurchase,
+            isConsumable: true,
+          }).then(() => {
+            // Here you have complete your process with your bk
+            alert("Payment Successfull.");
+            const res = dispatch(subscribe(token?.id));
+            if (res) {
+              let user = token;
+              user.paid = "1";
+              dispatch(saveToken(user));
+              fetchProfile(token?.id);
+            }
+          });
+
+          setOwnedSubscriptions((prev) => [
+            ...prev,
+            currentPurchase?.productId,
+          ]);
+        }
+      } catch (error) {
+        if (error instanceof PurchaseError) {
+          errorLog({ message: `[${error.code}]: ${error.message}`, error });
+        } else {
+          errorLog({ message: "handleBuyProduct", error });
+        }
+      }
+    };
+    checkCurrentPurchase();
+  }, [Platform.OS == "ios" && currentPurchase & finishTransaction]);
 
   return (
     <View style={styles.container}>
@@ -245,10 +328,16 @@ const Profile = (props) => {
               title={token?.paid == "1" ? "Unsubscribe" : "Subscribe"}
               onPress={() => {
                 console.log(token);
-                if (token?.paid == "0") {
-                  Subscribe();
-                } else {
-                  SubscribeNew();
+                if (Platform.OS == "android") {
+                  if (token?.paid == "0") {
+                    Subscribe();
+                  } else {
+                    SubscribeNew();
+                  }
+                }
+                //this condition is only for ios
+                if (Platform.OS == "ios") {
+                  letsDoIosInAppPurches(subscriptions[0].productId); // we have one subscription that's why.
                 }
               }}
               customStyle={styles.buttonStyle}
